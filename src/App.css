@@ -517,12 +517,21 @@ a{
   flex-direction:column;
   align-items: center;
   justify-content: center;
+  width: max-content;
+  padding: 10px 20px;
+  background-color:rgba(240, 248, 255, 0.912);
+  border: 1px solid black;
+  border-radius: 5px;
 }
 .login-password{
   margin-bottom: 2rem;
 }
 .login-password-btn{
   margin-bottom: .7rem;
+}
+.sign-up-header{
+  display: flex;
+  justify-content: center;
 }
 @media only screen and (max-width:1295px){
   .floater{
