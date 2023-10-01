@@ -29,7 +29,11 @@ function Navbar() {
                 aria-hidden="true"
               ></i>
             </div>
-            <div className='links'>LOGIN</div>
+            <div className='links'>
+              <Link to="/login">
+              LOGIN
+              </Link>
+              </div>
             <div className="nav-border links">
               <Link to="/contact-us">
                SUPPORT

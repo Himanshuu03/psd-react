@@ -453,7 +453,7 @@ a{
   font-size: 1.2rem;
   font-weight: 300;
   color: white;
-  background-color:rgb(0,107,182) ;
+  background-color:rgb(0,107,182);
   cursor: pointer;
 }
 .Contact-submit-btn{
@@ -472,6 +472,57 @@ a{
 }
 .carousel{
   text-align: center;
+}
+.company-logo{
+  display: flex;
+  justify-content: center;
+}
+.about-company-logo{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.login-header{
+  color: rgb(2,71,118);
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.login-icons{
+  color:rgb(0,107,182) ;
+  font-size: 50px;
+}
+.login-form{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: max-content;
+  padding: 10px 20px;
+  background-color:rgba(240, 248, 255, 0.912);
+}
+.main-login-header{
+  display: flex;
+  justify-content: center;
+}
+.already-login-signup{
+  color:rgb(0,107,182) ;
+}
+
+.sign-up-form{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+.login-password{
+  margin-bottom: 2rem;
+}
+.login-password-btn{
+  margin-bottom: .7rem;
 }
 @media only screen and (max-width:1295px){
   .floater{
@@ -733,6 +784,9 @@ a{
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 2rem;
+    margin-right: 2rem;
+  }
+  .login{
     margin-right: 2rem;
   }
   .Contact-label-input{

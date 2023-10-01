@@ -5,6 +5,7 @@ import Ticker from './Ticker'
 import Testimonial from './Testimonial'
 import Footer from '../Components/Footer'
 
+
 function Home() {
   return (
     <div>
