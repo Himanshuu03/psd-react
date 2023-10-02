@@ -3,10 +3,12 @@ import CompanyLogo from "../Components/CompanyLogo";
 import { FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import '../App.css'
+import Footer from "../Components/Footer";
 
 function Signup() {
   return (
-    <div>
+    <>
+    <div className="s-c">
       <CompanyLogo />
       <div className='sign-up-header'>
       <form className="sign-up-form">
@@ -111,6 +113,8 @@ function Signup() {
       </form>
       </div>
     </div>
+    <Footer/>
+    </> 
   );
 }
 

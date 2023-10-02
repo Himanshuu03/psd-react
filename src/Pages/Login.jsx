@@ -3,10 +3,12 @@ import CompanyLogo from '../Components/CompanyLogo'
 import { FaUserCircle } from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 import '../App.css'
+import Footer from '../Components/Footer'
 
 function Login() {
   return (
-    <div>
+    <>
+    <div className='l-c'>
       <CompanyLogo/>
       <div className='main-login-header'>
       <form className='login-form'>
@@ -35,12 +37,14 @@ function Login() {
       </Link>
       <p className='already-login'>Create new account <span className='already-login-signup links'>
         <Link to="/sign-up">
-         Singup
+         Signup
         </Link>
         </span></p>
       </form>
       </div>
     </div>
+      <Footer/>
+    </>
   )
 }
 

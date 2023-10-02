@@ -63,7 +63,7 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link to="/galleries">
                 Galleries
                 </Link>
               </li>
@@ -73,7 +73,7 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link to="/blogs">
                 Blogs
                 </Link>
               </li>
