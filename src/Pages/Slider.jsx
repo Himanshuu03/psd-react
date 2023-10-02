@@ -8,6 +8,7 @@ function Slider() {
     <div>
       <div className="slider-container">
         <Navbar />
+        <h1 className="b-c-h">Slider</h1>
         <div>
           <SlideShow/>
         </div>

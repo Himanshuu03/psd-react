@@ -8,6 +8,7 @@ function Contact() {
     <div>
             <div className='Contact-form-conatainer'>
             <Navbar/>
+            <h1 className='b-c-h'>Contact Us</h1>
                 <form className='Contact-us-form'>
                     <h1 className='Contact-head'>Talk with our sales team</h1>
                     <p className='Contact-head-2'>Feild mark with an asterick(<span className='asterick'>*</span>) are required</p>

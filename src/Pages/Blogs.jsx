@@ -13,6 +13,7 @@ function Blogs() {
     <>
     <div className='bl-c'>
     <Navbar/>
+    <h1 className='b-c-h'>Blogs</h1>
     <div className='blog-container'>
         <Card heading="Blog 1" srcc={img1}/>
         <Card heading="Blog 2" srcc={img2}/>

@@ -8,8 +8,8 @@ function Gallery() {
     <>
     <div className="g-c">
         <Navbar/>
+        <h1 className="b-c-h">Gallery</h1>
         <div className="gallery-c">
-
       <div class="gallery">
           <img
             src={require("../Assests/pexels-andrea-piacquadio-3844533.jpg")}

@@ -655,7 +655,11 @@ a{
   padding-bottom: 5rem;
   background-color: rgba(240, 248, 255, 0.912);
 }
-
+.b-c-h{
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 @media only screen and (max-width:1295px){
   .floater{
       background-color:rgb(0,107,182);
@@ -849,6 +853,10 @@ a{
   }
 }
 @media only screen and (max-width: 650px){
+  .s-c{
+    height: auto;
+    margin-bottom: 1rem;
+  }
   .Contact-form-conatainer{
     height: auto;
     background-color:rgba(240, 248, 255, 0.912);
