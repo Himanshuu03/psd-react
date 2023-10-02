@@ -68,7 +68,7 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link>
+                <Link to="/pages">
                 Pages
                 </Link>
               </li>
