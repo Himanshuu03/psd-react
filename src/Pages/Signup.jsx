@@ -44,7 +44,7 @@ function Signup() {
         <div className="Contact-us-label">
           <div>
             <label className="Contact-label">
-              Company Email<sup className="asterick">*</sup>
+              Email<sup className="asterick">*</sup>
             </label>
             <br />
             <br />
@@ -68,6 +68,36 @@ function Signup() {
             />
           </div>
         </div>
+        
+        <div className="Contact-us-label">
+          <div>
+            <label className="Contact-label">
+              Password<sup className="asterick">*</sup>
+            </label>
+            <br />
+            <br />
+            <input
+              type="password"
+              placeholder=""
+              className="Contact-label-input"
+            />
+          </div>
+
+          <div>
+            <label className="Contact-label">
+              Comfirm Password<sup className="asterick">*</sup>
+            </label>
+            <br />
+            <br />
+            <input
+              type="password"
+              placeholder=""
+              className="Contact-label-input"
+            />
+          </div>
+        </div>
+
+
 
         <Link to="/">
           <button className="Contact-submit">Submit</button>
