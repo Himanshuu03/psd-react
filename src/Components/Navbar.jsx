@@ -31,7 +31,7 @@ function Navbar() {
             </div>
             <div className='links'>
               <Link to="/login">
-              LOGIN
+                LOGIN
               </Link>
               </div>
             <div className="nav-border links">

@@ -6,6 +6,9 @@ import '../App.css'
 import Footer from '../Components/Footer'
 
 function Login() {
+  function handleLogin(){
+    
+  }
   return (
     <>
     <div className='l-c'>
@@ -31,7 +34,7 @@ function Login() {
       </div>
 
       <Link to="/">
-      <button className='Contact-submit login-password-btn'>
+      <button className='Contact-submit login-password-btn' onClick={handleLogin}>
             Submit
       </button>
       </Link>
