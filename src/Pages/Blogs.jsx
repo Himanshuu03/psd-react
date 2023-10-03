@@ -12,7 +12,7 @@ function Blogs() {
   return (
     <>
     <div className='bl-c'>
-    <Navbar/>
+    <Navbar path="/blogs"/>
     <h1 className='b-c-h'>Blogs</h1>
     <div className='blog-container'>
         <Card heading="Blog 1" srcc={img1}/>

@@ -6,7 +6,7 @@ function LandingPage() {
   return (
     <>
     <div className="main-page">
-      <Navbar/>
+      <Navbar path="/"/>
         <div className="main-page-content">
           <div>
             <h1>Premium Solution</h1>

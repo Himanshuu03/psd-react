@@ -7,7 +7,7 @@ function Gallery() {
   return (
     <>
     <div className="g-c">
-        <Navbar/>
+        <Navbar path="/galleries"/>
         <h1 className="b-c-h">Gallery</h1>
         <div className="gallery-c">
       <div class="gallery">

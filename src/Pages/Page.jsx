@@ -11,8 +11,8 @@ import img4 from '../Assests/pexels-tima-miroshnichenko-5439381.jpg'
 function Page() {
   return (
     <>
-    <div className='s-c'>
-    <Navbar/>
+    <div className='s-c-h'>
+    <Navbar path="pages"/>
     <h1 className='b-c-h'>Pages</h1>
     <h1 className='b-c-h'>Our Other Project</h1>
     <div className='blog-container'>

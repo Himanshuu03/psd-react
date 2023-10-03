@@ -7,7 +7,7 @@ function Slider() {
   return (
     <div>
       <div className="slider-container">
-        <Navbar />
+        <Navbar path="/slider"/>
         <h1 className="b-c-h">Slider</h1>
         <div>
           <SlideShow/>

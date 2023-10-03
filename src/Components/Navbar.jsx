@@ -1,10 +1,10 @@
-import React from 'react'
+
 import {HiClock,HiMailOpen} from 'react-icons/hi'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
 import '../App.css';
 
-function Navbar() {
+function Navbar({path}) {
   return (
     <div>
         <div className="main-header">
@@ -53,32 +53,39 @@ function Navbar() {
           <div className="nav-content">
             <ul>
               <li>
-                <Link to="/">
+                <Link to="/" style={{color: `${path === "/" ? "blue":"black"}`}}
+                >
                 Home
                 </Link>
               </li>
               <li>
-                <Link to="/slider">
+              <Link to="/slider" style={{color: `${path === "/slider" ? "blue":"black"}`}}
+                >
                 Slider
                 </Link>
               </li>
               <li>
-                <Link to="/galleries">
+              <Link to="/galleries" style={{color: `${path === "/galleries" ? "blue":"black"}`}}
+                >
                 Galleries
                 </Link>
               </li>
               <li>
-                <Link to="/pages">
+              <Link to="/pages" style={{color: `${path === "/pages" ? "blue":"black"}`}}
+
+                >
                 Pages
                 </Link>
               </li>
               <li>
-                <Link to="/blogs">
+              <Link to="/blogs" style={{color: `${path === "/blogs" ? "blue":"black"}`}}
+                >
                 Blogs
                 </Link>
               </li>
               <li>
-                <Link to='/contact-us'>
+              <Link to="/contact-us" style={{color: `${path === "/contact-us" ? "blue":"black"}`}}
+                >
                 Contact
                 </Link>
               </li>

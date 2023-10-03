@@ -7,7 +7,7 @@ function Contact() {
   return (
     <div>
             <div className='Contact-form-conatainer'>
-            <Navbar/>
+            <Navbar path="/contact-us"/>
             <h1 className='b-c-h'>Contact Us</h1>
                 <form className='Contact-us-form'>
                     <h1 className='Contact-head'>Talk with our sales team</h1>
