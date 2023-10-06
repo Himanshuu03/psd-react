@@ -15,9 +15,6 @@ input::placeholder{
 .links{
   cursor: pointer;
 }
-.container{
-  overflow-x: hidden;
-}
 .hidden{
   display: none;
 }
@@ -1043,4 +1040,7 @@ a{
 }
 .floater-inp::placeholder{
   color: white;
+}
+.container{
+  overflow-x: hidden;
 }
