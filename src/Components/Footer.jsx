@@ -6,7 +6,6 @@ import '../App.css'
 
 function Footer() {
   const [linker,setLinker] = useState(false);
-  console.log(linker);
   return (
     <div>
         <div className="footer" id="tiker-footer">
@@ -45,7 +44,11 @@ function Footer() {
           `footer-side-two ${linker ? "active" :""}`
         }
         >
-          <div className="quick-links">
+          <div 
+          className ={
+            "quick-links"
+          }
+          >
             <p>Quick Links</p>
             <ul>
               <li>Home</li>
