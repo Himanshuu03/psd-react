@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {AiFillFacebook,AiFillTwitterSquare,AiFillLinkedin} from 'react-icons/ai'
 import {FaYoutubeSquare} from 'react-icons/fa'
+import {BiLinkAlt} from 'react-icons/bi'
 import '../App.css'
 
 function Footer() {
+  const [linker,setLinker] = useState(false);
+  console.log(linker);
   return (
     <div>
         <div className="footer" id="tiker-footer">
@@ -30,7 +33,18 @@ function Footer() {
             <FaYoutubeSquare className='icons4'/>
           </div>
         </div>
-        <div className="footer-side-two">
+        <div className='linker'
+        >
+        <BiLinkAlt 
+        onClick={()=>{
+          setLinker(!(linker));
+        }}
+        />
+        </div>
+        <div className={
+          `footer-side-two ${linker ? "active" :""}`
+        }
+        >
           <div className="quick-links">
             <p>Quick Links</p>
             <ul>
