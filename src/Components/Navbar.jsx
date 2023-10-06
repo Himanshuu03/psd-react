@@ -1,6 +1,6 @@
 import {HiClock,HiMailOpen} from 'react-icons/hi'
 import {BsFillTelephoneFill} from 'react-icons/bs'
-import {Link, redirect} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import '../App.css';
 
 

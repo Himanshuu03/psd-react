@@ -132,8 +132,8 @@ a{
   font-size: 5vb;
 }
 .main-page-text{
-  margin-right: 7rem;
-  margin-left: 7rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
   margin-top: 3vb;
   font-weight:lighter;
   font-size: 3vb;
@@ -1040,4 +1040,7 @@ a{
       padding:4rem 0rem 5rem 0rem;
       border-radius: 5px;
   }
+}
+.floater-inp::placeholder{
+  color: white;
 }

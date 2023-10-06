@@ -12,7 +12,7 @@ function Page() {
   return (
     <>
     <div className='s-c-h'>
-    <Navbar path="pages"/>
+    <Navbar path="/pages"/>
     <h1 className='b-c-h'>Pages</h1>
     <h1 className='b-c-h'>Our Other Project</h1>
     <div className='blog-container'>

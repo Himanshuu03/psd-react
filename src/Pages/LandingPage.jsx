@@ -34,9 +34,14 @@ function LandingPage() {
           <input
             type="text"
             placeholder="enter email address"
-            class="floater-inp"
+            className="floater-inp"
+            style={
+              {color:"white",
+            }
+            }
           />
-          <button class="floater-btn">Join</button>
+          <button class="floater-btn"
+          >Join</button>
         </div>
       </div>
       <div class="join-now">
