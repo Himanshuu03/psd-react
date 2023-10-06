@@ -1,8 +1,8 @@
-
 import {HiClock,HiMailOpen} from 'react-icons/hi'
 import {BsFillTelephoneFill} from 'react-icons/bs'
-import {Link} from 'react-router-dom'
+import {Link, redirect} from 'react-router-dom'
 import '../App.css';
+
 
 function Navbar({path}) {
   return (
@@ -53,7 +53,11 @@ function Navbar({path}) {
           <div className="nav-content">
             <ul>
               <li>
-                <Link to="/" style={{color: `${path === "/" ? "blue":"black"}`}}
+                <Link to="/" style={
+                  {
+                    color: `${path ===  "/" ? "blue":"black"}`
+                  }
+                }
                 >
                 Home
                 </Link>

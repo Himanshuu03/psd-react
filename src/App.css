@@ -4,6 +4,14 @@
   box-sizing: border-box;
   font-family:sans-serif;
 }
+
+input:focus{
+  outline: 2px solid blue;
+  color: black;
+}
+input::placeholder{
+  color: #000;
+}
 .links{
   cursor: pointer;
 }
@@ -455,9 +463,9 @@ a{
   text-align: center;
 }
 .Contact-form-conatainer{
-  height: 100vh;
+  height: auto;
   background-color:rgba(240, 248, 255, 0.912);
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 .asterick{
   color: red;
@@ -505,7 +513,8 @@ a{
   margin-top: 1rem;
 }
 .slider-container{
-  height: 100vh;
+  height: auto;
+  margin-bottom: 5rem;
   background-color:rgba(240, 248, 255, 0.912);
 }
 .slider-wrap{
