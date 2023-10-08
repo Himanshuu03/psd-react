@@ -427,6 +427,8 @@ a{
   display: none;
   position: absolute;
   right: 0;
+  color: rgb(17, 116, 186);
+  font-size: 40px;
 }
 .icons3{
   font-size: 60px;

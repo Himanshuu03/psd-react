@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../Components/Navbar'
 import '../App.css'
+import {BiSolidLogIn} from 'react-icons/bi'
 
 function LandingPage() {
+  const [state,setState] = useState(false);
   return (
     <>
     <div className="main-page">
@@ -22,7 +24,10 @@ function LandingPage() {
           </div>
         </div>
     </div>
-    <div className="floater">
+    <div className={
+      `floater ${state ? "active" : ""}`
+    }
+    >
         <div className="floater-part-one">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit,
@@ -44,7 +49,12 @@ function LandingPage() {
           >Join</button>
         </div>
       </div>
-      <div className="join-now">
+      <div className="join-now"
+      onClick={()=>{
+        setState(!state);
+      }}
+      >
+        <BiSolidLogIn/>
       </div>
     </>
   )
