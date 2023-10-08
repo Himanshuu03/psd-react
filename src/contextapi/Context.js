@@ -16,7 +16,14 @@ function Context({children}) {
       password:"",
       confirmPassword:""
     })
-    const value= {loginData,setLoginData,signUpData,setSignUpData};
+    const [contactData,setContactData] = useState({
+      fname:"",
+      lname:"",
+      email:"",
+      phoneno:"",
+      query:""
+    })
+    const value= {loginData,setLoginData,signUpData,setSignUpData,contactData,setContactData};
   return (<AppContext.Provider value={value}>
     {children}
     </AppContext.Provider>
