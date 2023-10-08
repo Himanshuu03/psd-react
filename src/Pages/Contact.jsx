@@ -5,7 +5,7 @@ import Footer from '../Components/Footer'
 
 function Contact() {
   return (
-    <div>
+    <div className='back'>
             <div className='Contact-form-conatainer'>
             <Navbar path="/contact-us"/>
             <h1 className='b-c-h'>Contact Us</h1>

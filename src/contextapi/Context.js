@@ -8,8 +8,15 @@ function Context({children}) {
         password:"",
         state:false
     })
-
-    const value= {loginData,setLoginData};
+    const [signUpData,setSignUpData] = useState({
+      fname:"",
+      lname:"",
+      email:"",
+      phoneno:"",
+      password:"",
+      confirmPassword:""
+    })
+    const value= {loginData,setLoginData,signUpData,setSignUpData};
   return (<AppContext.Provider value={value}>
     {children}
     </AppContext.Provider>
