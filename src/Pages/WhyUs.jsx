@@ -18,10 +18,10 @@ function WhyUs() {
           <p>massa. Aenean eleitend.</p>
         </div>
       </div>
-      <div class="why-us-2">
-        <div class="why-us-2-content">
-          <div class="card-why-us-2">
-            <div class="why-us-2-img">
+      <div className="why-us-2">
+        <div className="why-us-2-content">
+          <div className="card-why-us-2">
+            <div className="why-us-2-img">
               <img src={require('../Assests/share.png')} alt='pp'/>
             </div>
             <div>
@@ -34,8 +34,8 @@ function WhyUs() {
             </div>
           </div>
 
-          <div class="card-why-us-2 border-card">
-            <div class="why-us-2-img">
+          <div className="card-why-us-2 border-card">
+            <div className="why-us-2-img">
               <img src={require('../Assests/think.png')} alt='pp'/>
             </div>
             <div>
@@ -47,8 +47,8 @@ function WhyUs() {
               </p>
             </div>
           </div>
-          <div class="card-why-us-2">
-            <div class="why-us-2-img">
+          <div className="card-why-us-2">
+            <div className="why-us-2-img">
               <img src={require('../Assests/clock.png')} alt='pp' />
             </div>
             <div>

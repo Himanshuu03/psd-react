@@ -22,15 +22,15 @@ function LandingPage() {
           </div>
         </div>
     </div>
-    <div class="floater">
-        <div class="floater-part-one">
+    <div className="floater">
+        <div className="floater-part-one">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit,
             sed do eiusmod tempoer incididunt ut labore et dolore
             magna aliqua.
           </p>
         </div>
-        <div class="floater-part-two">
+        <div className="floater-part-two">
           <input
             type="text"
             placeholder="enter email address"
@@ -40,12 +40,11 @@ function LandingPage() {
             }
             }
           />
-          <button class="floater-btn"
+          <button className="floater-btn"
           >Join</button>
         </div>
       </div>
-      <div class="join-now">
-
+      <div className="join-now">
       </div>
     </>
   )

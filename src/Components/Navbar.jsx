@@ -2,9 +2,13 @@ import {HiClock,HiMailOpen} from 'react-icons/hi'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
 import '../App.css';
+import { useContext } from 'react';
+import { AppContext } from '../contextapi/Context';
 
 
 function Navbar({path}) {
+  const {loginData} = useContext(AppContext);
+  const check = loginData.state;
   return (
     <div>
         <div className="main-header">
@@ -31,7 +35,9 @@ function Navbar({path}) {
             </div>
             <div className='links'>
               <Link to="/login">
-                LOGIN
+                {
+                  check ? "LOGOUT" : "LOGIN"
+                }
               </Link>
               </div>
             <div className="nav-border links">

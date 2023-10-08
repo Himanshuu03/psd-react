@@ -4,7 +4,7 @@ import '../App.css'
 function Card({heading,srcc}) {
   return (
     <div>
-        <div class="card">
+        <div className="card">
             <img src={srcc} alt="img"/>
             <h1>{heading}</h1>
             <p>uper slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>

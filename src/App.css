@@ -806,6 +806,9 @@ a{
   }
 }
 @media only screen and (max-width: 520px){
+  .why-us h1{
+    font-size: 1.9rem;
+  }
   .main-page-text{
       margin-right: 2rem;
       margin-left: 2rem;
@@ -852,6 +855,7 @@ a{
   }
   .why-us p{
       font-size: 1.2rem;
+      letter-spacing: 0px;
   }
   .testimonial-cards{
       margin-left: 1rem;
