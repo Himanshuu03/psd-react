@@ -5,7 +5,7 @@ import '../App.css';
 import SlideShow from "../Components/SlideShow";
 function Slider() {
   return (
-    <div>
+    <div className="back">
       <div className="slider-container">
         <Navbar path="/slider"/>
         <h1 className="b-c-h">Slider</h1>

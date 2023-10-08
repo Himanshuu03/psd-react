@@ -5,7 +5,7 @@ import Footer from "../Components/Footer";
 
 function Gallery() {
   return (
-    <>
+    <div className="back">
     <div className="g-c">
         <Navbar path="/galleries"/>
         <h1 className="b-c-h">Gallery</h1>
@@ -76,7 +76,7 @@ function Gallery() {
         </div>
     </div>
     <Footer/>
-    </>
+    </div>
   );
 }
 

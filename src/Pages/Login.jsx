@@ -25,7 +25,9 @@ function Login() {
         state: !loginData.state,
       }
     })
-    navigate("/");
+    if(loginData.email !== "" && loginData.password !== ""){
+      navigate("/");
+    }
   }
   const navigate = useNavigate();
   return (
@@ -60,6 +62,7 @@ function Login() {
 
 
       <button className='Contact-submit login-password-btn'
+      type='submit'
       onClick={handleClick}
       >
             Submit

@@ -10,7 +10,7 @@ import Footer from '../Components/Footer'
 
 function Blogs() {
   return (
-    <>
+    <div className='back'>
     <div className='bl-c'>
     <Navbar path="/blogs"/>
     <h1 className='b-c-h'>Blogs</h1>
@@ -26,7 +26,7 @@ function Blogs() {
     </div>
     </div>
     <Footer/>
-    </>
+    </div>
   )
 }
 

@@ -2,28 +2,42 @@ import React from 'react'
 import '../App.css'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import Card from '../Components/Card'
-import img1 from '../Assests/pexels-andrea-piacquadio-3844533.jpg'
-import img2 from '../Assests/pexels-cottonbro-studio-5990030.jpg'
-import img3 from '../Assests/pexels-startup-stock-photos-7070.jpg'
-import img4 from '../Assests/pexels-tima-miroshnichenko-5439381.jpg'
 
 function Page() {
   return (
-    <>
-    <div className='s-c-h'>
+    <div className='back'>
     <Navbar path="/pages"/>
-    <h1 className='b-c-h'>Pages</h1>
-    <h1 className='b-c-h'>Our Other Project</h1>
-    <div className='blog-container'>
-        <Card heading="Project 1" srcc={img1}/>
-        <Card heading="Project 2" srcc={img2}/>
-        <Card heading="Project 3" srcc={img3}/>
-        <Card heading="Project 4" srcc={img4}/>
-    </div>
-    </div>
+    <header class="page-header">
+        <h1>Welcome to Our Content Page</h1>
+    </header>
+    <main>
+        <section id="section1" class="content-section">
+            <h2>Section 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dolor vel velit iaculis tincidunt.</p>
+        </section>
+        <section id="section2" class="content-section">
+            <h2>Section 2</h2>
+            <p>Integer a libero sed lorem convallis suscipit. Sed eu neque neque. Duis non sem non tortor congue euismod.</p>
+        </section>
+        <section id="section3" class="content-section">
+            <h2>Section 3</h2>
+            <p>Fusce viverra ante eget tortor vestibulum ultricies. Vivamus ac urna vel ligula pharetra rhoncus.</p>
+        </section>
+        <section id="section1" class="content-section">
+            <h2>Section 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget dolor vel velit iaculis tincidunt.</p>
+        </section>
+        <section id="section2" class="content-section">
+            <h2>Section 5</h2>
+            <p>Integer a libero sed lorem convallis suscipit. Sed eu neque neque. Duis non sem non tortor congue euismod.</p>
+        </section>
+        <section id="section3" class="content-section">
+            <h2>Section 6</h2>
+            <p>Fusce viverra ante eget tortor vestibulum ultricies. Vivamus ac urna vel ligula pharetra rhoncus.</p>
+        </section>
+    </main>
     <Footer/>
-    </>
+    </div>
   )
 }
 
