@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import CompanyLogo from '../Components/CompanyLogo'
+import Header from '../Components/Navbar'
 import { FaUserCircle } from 'react-icons/fa'
 import {Link, useNavigate} from 'react-router-dom'
 import '../App.css'
@@ -31,9 +31,9 @@ function Login() {
   }
   const navigate = useNavigate();
   return (
-    <>
+    <div className="back">
     <div className='l-c'>
-      <CompanyLogo/>
+      <Header/>
       <div className='main-login-header'>
       <form className='login-form'>
       <FaUserCircle className='login-icons'/>
@@ -77,7 +77,7 @@ function Login() {
       </div>
     </div>
       <Footer/>
-    </>
+    </div>
   )
 }
 

@@ -18,7 +18,9 @@ function Contact() {
     <div className='back'>
             <div className='Contact-form-conatainer'>
             <Navbar path="/contact-us"/>
-            <h1 className='b-c-h'>Contact Us</h1>
+            <header className="page-header">
+        <h1>Contact Us</h1>
+    </header>
                 <form className='Contact-us-form' onSubmit={(event)=>{
                     event.preventDefault();
                 }}>

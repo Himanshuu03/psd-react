@@ -8,7 +8,9 @@ function Gallery() {
     <div className="back">
     <div className="g-c">
         <Navbar path="/galleries"/>
-        <h1 className="b-c-h">Gallery</h1>
+        <header className="page-header">
+        <h1>Galleries</h1>
+      </header>
         <div className="gallery-c">
       <div className="gallery">
           <img

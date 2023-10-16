@@ -105,6 +105,7 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   font-size: 1rem;
 }
 .icons{
@@ -589,10 +590,12 @@ a{
   justify-content: center;
 }
 .l-c{
-  height: 100vh;
+  height: auto;
+  margin-bottom: 5rem;
 }
 .s-c{
-  height: 100vh;
+  height: auto;
+  margin-bottom: 5rem;
 }
 .s-c-h{
   height: auto;
@@ -768,6 +771,13 @@ section.content-section {
   }
 }
 @media only screen and (max-width: 1080px){
+  .main-page{
+    height: auto;
+    padding-bottom: 5rem;
+  }
+  .nav-logo p{
+    margin-left: 0rem;
+  }
   .main-header{
       display: flex;
       flex-direction: column;
@@ -810,7 +820,13 @@ section.content-section {
       margin-left: 0rem;
   }
   .nav-content ul li{
-      display: inline-block;
+    display: block;
+    list-style-type: none;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid black;
+  margin-bottom: 1.5rem;
       margin-right: 0rem;
       margin-left: .4rem;
       font-weight: 100;
@@ -869,7 +885,7 @@ section.content-section {
       margin-top: 0rem;
   }
   .main-page-content{
-      margin-top: 15vb;
+      margin-top: 10vb;
   }
   .main-page-content h1{
       font-size: 4vb;
@@ -1059,9 +1075,7 @@ section.content-section {
       justify-content: center;
   }
 }
-.active{
-  display: flex;
-}
+
 @media only screen and (min-width:1470px) {
   .floater{
       display: flex;
@@ -1082,4 +1096,27 @@ section.content-section {
 
 .back{
   background-color: rgba(240, 248, 255, 0.912);
+}
+
+.Bars{
+  font-size: 30px;
+  margin-top: 1rem;
+  display:none;
+  @media screen and (max-width:1080px) {
+    display:flex;
+  }
+}
+.nav-ham{
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width:1080px) {
+    display: none;
+    flex-direction: column;
+  }
+}
+.active{
+  display: flex;
+}
+.back{
+  background-color: rgb(221, 227, 233);
 }

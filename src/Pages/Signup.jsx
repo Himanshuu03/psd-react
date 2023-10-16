@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import CompanyLogo from "../Components/CompanyLogo";
 import { FaUserCircle } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import '../App.css'
 import Footer from "../Components/Footer";
 import { AppContext } from "../contextapi/Context";
+import Navbar from "../Components/Navbar";
 
 function Signup() {
 
@@ -36,9 +36,9 @@ function Signup() {
     event.preventDefault();
   }
   return (
-    <>
+    <div className="back">
     <div className="s-c">
-      <CompanyLogo />
+      <Navbar/>
       <div className='sign-up-header'>
       <form className="sign-up-form" onSubmit={submitHandler}>
         <FaUserCircle className="login-icons" />
@@ -168,7 +168,7 @@ function Signup() {
       </div>
     </div>
     <Footer/>
-    </> 
+    </div> 
   );
 }
 

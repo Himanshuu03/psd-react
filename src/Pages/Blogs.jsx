@@ -13,7 +13,9 @@ function Blogs() {
     <div className='back'>
     <div className='bl-c'>
     <Navbar path="/blogs"/>
-    <h1 className='b-c-h'>Blogs</h1>
+    <header className="page-header">
+        <h1>Welcome to Our Blogs</h1>
+    </header>
     <div className='blog-container'>
         <Card heading="Blog 1" srcc={img1}/>
         <Card heading="Blog 2" srcc={img2}/>

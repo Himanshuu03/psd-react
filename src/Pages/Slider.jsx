@@ -8,7 +8,9 @@ function Slider() {
     <div className="back">
       <div className="slider-container">
         <Navbar path="/slider"/>
-        <h1 className="b-c-h">Slider</h1>
+        <header className="page-header">
+        <h1>Slider</h1>
+      </header>
         <div>
           <SlideShow/>
         </div>

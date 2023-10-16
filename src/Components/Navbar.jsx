@@ -2,13 +2,14 @@ import {HiClock,HiMailOpen} from 'react-icons/hi'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
 import '../App.css';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { AppContext } from '../contextapi/Context';
-
-
+import {FaBars} from 'react-icons/fa'
+import {ImCross} from 'react-icons/im'
 function Navbar({path}) {
   const {loginData} = useContext(AppContext);
   const check = loginData.state;
+  const [hamBurger,setHamBurger] = useState(false);
   return (
     <div>
         <div className="main-header">
@@ -56,8 +57,21 @@ function Navbar({path}) {
             </div>
             <p>Psdfreebies.com</p>
           </div>
+          <div className='Bars' onClick={()=>{
+            setHamBurger(!hamBurger);
+          }}>
+            {
+              hamBurger ?(
+                <ImCross/>
+              ):(
+                <FaBars/>
+              )
+            }
+          </div>
           <div className="nav-content">
-            <ul>
+            <ul className={
+              "nav-ham "+(hamBurger ?"active" :"")
+            }>
               <li>
                 <Link to="/" style={
                   {
