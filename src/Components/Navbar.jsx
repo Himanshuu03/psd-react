@@ -10,6 +10,9 @@ function Navbar({path}) {
   const {loginData} = useContext(AppContext);
   const check = loginData.state;
   const [hamBurger,setHamBurger] = useState(false);
+  function hamHandler(){
+    setHamBurger(!hamBurger);
+  }
   return (
     <div>
         <div className="main-header">
@@ -57,14 +60,12 @@ function Navbar({path}) {
             </div>
             <p>Psdfreebies.com</p>
           </div>
-          <div className='Bars' onClick={()=>{
-            setHamBurger(!hamBurger);
-          }}>
+          <div className='Bars'>
             {
               hamBurger ?(
-                <ImCross/>
+                <ImCross onClick={hamHandler}/>
               ):(
-                <FaBars/>
+                <FaBars onClick={hamHandler}/>
               )
             }
           </div>
