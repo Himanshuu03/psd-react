@@ -1120,3 +1120,6 @@ section.content-section {
 .back{
   background-color: rgb(221, 227, 233);
 }
+.actives{
+  display: flex;
+}
