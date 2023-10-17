@@ -60,13 +60,14 @@ function Navbar({path}) {
           <div className='Bars' onClick={()=>{
             setHamBurger(!hamBurger);
           }}>
-            {
+            {/* {
               hamBurger ?(
                 <ImCross/>
               ):(
                 <FaBars/>
               )
-            }
+            } */}
+            <FaBars/>
           </div>
           <div className="nav-content">
             <ul className={
