@@ -70,7 +70,7 @@ function Navbar({path}) {
           </div>
           <div className="nav-content">
             <ul className={
-              "nav-ham "+(hamBurger ?"active" :"")
+              `nav-ham ${hamBurger ? "active" :""}`
             }>
               <li>
                 <Link to="/" style={
