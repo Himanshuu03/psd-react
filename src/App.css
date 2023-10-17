@@ -1109,16 +1109,18 @@ section.content-section {
 .nav-ham{
   display: flex;
   flex-direction: row;
-  @media screen and (max-width:1080px) {
-    display: none;
-    flex-direction: column;
-  }
 }
 .active{
   display: flex;
 }
 .back{
   background-color: rgb(221, 227, 233);
+}
+@media only screen and (max-width: 1080px){
+  .nav-ham{
+    display : none;
+    flex-direction: column;
+  }
 }
 .actives{
   display: flex;
