@@ -1,13 +1,16 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import Header from '../Components/Navbar'
 import { FaUserCircle } from 'react-icons/fa'
 import {Link, useNavigate} from 'react-router-dom'
 import '../App.css'
 import Footer from '../Components/Footer'
 import { AppContext } from '../contextapi/Context'
+import { toast } from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css";
 
 function Login() {
   const {loginData,setLoginData} = useContext(AppContext);
+  const [login,setLogin] = useState(false);
 
   function handleChange(event){
     setLoginData((prevData)=>{
@@ -19,14 +22,12 @@ function Login() {
   }
 
   function handleClick(){
-    setLoginData((prevData)=>{
-      return{
-        ...prevData,
-        state: !loginData.state,
-      }
-    })
     if(loginData.email !== "" && loginData.password !== ""){
-      navigate("/");
+      toast.success("Login From Filled");
+      setLogin(true);
+    }
+    else{
+      toast.warn("Fill All The Details");
     }
   }
   const navigate = useNavigate();
@@ -34,8 +35,13 @@ function Login() {
     <div className="back">
     <div className='l-c'>
       <Header/>
+
       <div className='main-login-header'>
-      <form className='login-form'>
+      <form className='login-form'
+      onSubmit={(event)=>{
+        event.preventDefault();
+      }}
+      >
       <FaUserCircle className='login-icons'/>
       <h1 className='login-header'>Login</h1>
       <div className='login-password login'>
@@ -76,6 +82,32 @@ function Login() {
       </form>
       </div>
     </div>
+    {
+      login ?(
+    <section className="login-c-s">
+            <h2>Login Data</h2>
+            <h3>Email :</h3>
+            <p>{loginData.email}</p>
+            <button className='Contact-submit-close login-password-btn'
+            onClick={()=>{
+              setLogin(false);
+            }}
+            >
+              Close
+            </button>
+            <button className='Contact-submit login-password-btn'
+            onClick={()=>{
+              toast.success("Login From Submitted")
+              navigate("/")
+            }}
+            >
+              Submit Data
+            </button>
+        </section>
+      ):(
+        <div></div>
+      )
+    }
       <Footer/>
     </div>
   )

@@ -1,16 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import '../App.css'
 import Footer from "../Components/Footer";
 import { AppContext } from "../contextapi/Context";
 import Navbar from "../Components/Navbar";
+import { toast } from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css";
 
 function Signup() {
 
   const navigate = useNavigate();
 
   const {signUpData,setSignUpData}= useContext(AppContext);
+  const [signin,setSignin] = useState(false);
 
   function changeHandle(event){
     setSignUpData((prevData)=>{
@@ -24,11 +27,15 @@ function Signup() {
   function clickHandler(){
     if(signUpData.fname !== "" && signUpData.lname !== "" && signUpData.email !== "" && signUpData.phoneno !==  "" && signUpData.password !== "" && signUpData.confirmPassword !== ""){
       if(signUpData.password !== signUpData.confirmPassword){
-        alert("password and confirm password are not same")
+        toast.error("Password and Confirm Password are not same")
       }
       else{
-        navigate("/");
+        toast.success("SignUp From Filled");
+        setSignin(true);
       }
+    }
+    else{
+      toast.warn("Fill All The Details");
     }
   }
 
@@ -152,9 +159,6 @@ function Signup() {
           </div>
         </div>
 
-
-
-
           <button className="Contact-submit"
           onClick={clickHandler}
           >Submit</button>
@@ -167,6 +171,36 @@ function Signup() {
       </form>
       </div>
     </div>
+    {
+      signin ?(
+    <section className="login-c-s">
+            <h2>Login Data</h2>
+            <h3>Name :</h3>
+            <p>{signUpData.fname} {signUpData.lname}</p>
+            <h3>Email :</h3>
+            <p>{signUpData.email}</p>
+            <h3>Phone No.</h3>
+            <p>{signUpData.phoneno}</p>
+            <button className='Contact-submit-close login-password-btn'
+            onClick={()=>{
+              setSignin(false);
+            }}
+            >
+              Close
+            </button>
+            <button className='Contact-submit login-password-btn'
+            onClick={()=>{
+              toast.success("SignUp From Submitted")
+              navigate("/")
+            }}
+            >
+              Submit Data
+            </button>
+        </section>
+      ):(
+        <div></div>
+      )
+    }
     <Footer/>
     </div> 
   );
