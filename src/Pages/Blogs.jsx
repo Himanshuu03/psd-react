@@ -1,9 +1,10 @@
 import React from 'react'
 import Card from '../Components/Card'
-import img1 from '../Assests/pexels-andrea-piacquadio-3844533.jpg'
-import img2 from '../Assests/pexels-cottonbro-studio-5990030.jpg'
-import img3 from '../Assests/pexels-startup-stock-photos-7070.jpg'
-import img4 from '../Assests/pexels-tima-miroshnichenko-5439381.jpg'
+import img1 from '../Assests/web.avif'
+import img2 from '../Assests/digital.avif'
+import img3 from '../Assests/ecom.avif'
+import img4 from '../Assests/app.avif'
+import img5 from '../Assests/indu.avif'
 import '../App.css'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
@@ -17,14 +18,11 @@ function Blogs() {
         <h1>Welcome to Our Blogs</h1>
     </header>
     <div className='blog-container'>
-        <Card heading="Blog 1" srcc={img1}/>
-        <Card heading="Blog 2" srcc={img2}/>
-        <Card heading="Blog 3" srcc={img3}/>
-        <Card heading="Blog 4" srcc={img4}/>
-        <Card heading="Blog 5" srcc={img1}/>
-        <Card heading="Blog 6" srcc={img2}/>
-        <Card heading="Blog 7" srcc={img3}/>
-        <Card heading="Blog 8" srcc={img4}/>
+        <Card heading="Web Design" srcc={img1} content="Explore the latest trends, best practices, and tips for creating captivating websites that drive success."/>
+        <Card heading="Digital Marketing" srcc={img2} content="Dive into the world of digital marketing, from SEO strategies to social media tactics and everything in between."/>
+        <Card heading="E-Commerce" srcc={img3} content="Discover how to optimize your online store and provide a seamless shopping experience for your customers."/>
+        <Card heading="App Development" srcc={img4} content="Stay up to date with mobile app development trends and insights for Android and iOS platforms."/>
+        <Card heading="Industry Insights" srcc={img5} content="Gain valuable industry-specific knowledge and stay informed about the latest developments in your field."/>
     </div>
     </div>
     <Footer/>

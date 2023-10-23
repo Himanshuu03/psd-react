@@ -58,7 +58,7 @@ function Navbar({path}) {
               <h1 className="first-nav">ULTRA</h1>
               <h1 className="second-nav">PREMIUN</h1>
             </div>
-            <p>Psdfreebies.com</p>
+            <p>Ultrapremiun.com</p>
           </div>
           <div className='Bars'>
             {

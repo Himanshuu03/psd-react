@@ -8,6 +8,7 @@ import Signup from './Pages/Signup'
 import Gallery from './Pages/Gallery'
 import Blogs from './Pages/Blogs'
 import Page from './Pages/Page'
+import ReadMore from './Pages/ReadMore'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/galleries" element={<Gallery/>}/>
         <Route path='/blogs' element={<Blogs/>}/>
         <Route path='/pages' element={<Page/>}/>
+        <Route path='/blogs/readMore' element={<ReadMore/>}/>
       </Routes>
     </div>
   )

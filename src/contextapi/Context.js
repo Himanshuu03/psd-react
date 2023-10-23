@@ -23,7 +23,10 @@ function Context({children}) {
       phoneno:"",
       query:""
     })
-    const value= {loginData,setLoginData,signUpData,setSignUpData,contactData,setContactData};
+    const [title,setTitle] = useState(null);
+    const [img,setImg] = useState(null);
+    const [content,setContent] = useState(null);
+    const value= {loginData,setLoginData,signUpData,setSignUpData,contactData,setContactData,setTitle,title,img,setImg,content,setContent};
   return (<AppContext.Provider value={value}>
     {children}
     </AppContext.Provider>

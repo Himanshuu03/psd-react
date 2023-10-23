@@ -134,7 +134,7 @@ a{
   margin-left: 7rem;
   margin-top: 3vb;
   font-weight:lighter;
-  font-size: 3vb;
+  font-size: 1.5rem;
 }
 .main-page-text p{
   text-align: center;
@@ -264,7 +264,10 @@ a{
 }
 .tiker-photo{
   width: 50%;
-  background-color:rgb(189,189,189);
+  background-image: url('./Assests/business-man-financial-inspector-secretary-making-report-calculating-checking-balance-internal-revenue-service-inspector-checking-document-audit-concept.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .tiker-content h3{
   color: rgb(59,59,59);  
@@ -771,6 +774,20 @@ section.content-section {
   }
 }
 @media only screen and (max-width: 1080px){
+  .floater-part-one{
+    color: white;
+    font-size: 1.3rem;
+    line-height: 23px;
+    text-align: center;
+  }
+  .main-page-text{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 3vb;
+    font-weight:100;
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+}
   .main-page{
     height: auto;
     padding-bottom: 5rem;
@@ -860,7 +877,6 @@ section.content-section {
       margin-left: 2rem;
       margin-top: 3vb;
       font-weight:100;
-      font-size: 3vb;
   }
   .quick-links{
       margin: 1rem 0.2rem 0rem 0.2rem;
@@ -911,7 +927,7 @@ section.content-section {
       margin-right: 0rem;
   }
   .main-page-text{
-      font-size: 2.5vb;
+      font-size: 1rem
   }
   .nav-logo p{
       margin-left: 0rem;
@@ -1038,9 +1054,9 @@ section.content-section {
   .floater-part-one{
       color: white;
       font-weight: 100;
-      font-size: .8rem;
-      margin-left: 1.2rem;
-      margin-right: 1.2rem;
+      font-size: 1.1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
       line-height: 20px;
   }
 }
@@ -1067,7 +1083,11 @@ section.content-section {
   }
   .tiker-photo{
       width: 100%;
-      background-color:rgb(189,189,189);
+      background-image: url('./Assests/handshake-close-up-executives.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 300px;
   }
 }
 @media only screen and (min-width: 1400px){
@@ -1124,4 +1144,37 @@ section.content-section {
 }
 .actives{
   display: flex;
+}
+.readmore-content{
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+.readmore-content .meta{
+  color: #888;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom:  1rem;
+}
+.r-m-content{
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.readmore-img{
+  text-align: center;
+}
+.readmore-content img{
+  width: 350px;
+  height: 290px;
+  border: 1px solid black;
+}
+.r-m-content-2{
+  padding: 20px;
+  text-align: center;
+}
+.r-m-content-2 p{
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: lighter;
 }
