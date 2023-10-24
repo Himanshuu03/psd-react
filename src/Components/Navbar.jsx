@@ -6,6 +6,8 @@ import { useContext, useState } from 'react';
 import { AppContext } from '../contextapi/Context';
 import {FaBars} from 'react-icons/fa'
 import {ImCross} from 'react-icons/im'
+import { toast } from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css";
 function Navbar({path}) {
   const {loginData} = useContext(AppContext);
   const check = loginData.state;
@@ -18,16 +20,30 @@ function Navbar({path}) {
         <div className="main-header">
           <div className="main-header-part-1">
             <div>
+            <a href='mailto:himanshu32428@gmail.com'>
               <HiMailOpen className='icons'/>
-              <p className="icon-name">Pinar@gmail.com</p>
+              </a>
+              <p className="icon-name">
+                <a href='mailto:himanshu32428@gmail.com'>
+                himanshu@gmail.com
+                </a>
+                </p>
             </div>
             <div className="header-border">
+              <a href='tel:+4733378901'>
               <BsFillTelephoneFill className='icons'/>
+              </a>
+              <a href="tel:+919306748005">
               <p className="icon-name">85 26 37 48 59</p>
+              </a>
             </div>
             <div>
-               <HiClock className='icons'/>
-              <p className="icon-name">Mon - Sat : 9AM - 6PM</p>
+               <HiClock className='icons' onClick={()=>{
+                toast.warn("Services timming are Mon - Sat : 9AM - 6PM")
+               }}/>
+              <p className="icon-name" onClick={()=>{
+                toast.warn("Services timming are Mon - Sat : 9AM - 6PM")
+               }}>Mon - Sat : 9AM - 6PM</p>
             </div>
           </div>
           <div className="main-header-part-2">
@@ -49,7 +65,11 @@ function Navbar({path}) {
                SUPPORT
               </Link>
               </div>
-            <div className='links'>LANGUAGES</div>
+            <div className='links'
+            onClick={()=>{
+              toast.warn("Current language is English")
+            }}
+            >LANGUAGES</div>
           </div>
         </div>
         <div className="nav"> 

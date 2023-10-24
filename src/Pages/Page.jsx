@@ -8,7 +8,7 @@ function Page() {
     <div className='back'>
     <Navbar path="/pages"/>
     <header className="page-header">
-        <h1>Welcome to Our Content Page</h1>
+        <h1>Welcome to Our Services Page</h1>
     </header>
     <main>
         <section id="section1" className="content-section">

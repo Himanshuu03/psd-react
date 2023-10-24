@@ -7,6 +7,11 @@ import {
 import { FaYoutubeSquare } from "react-icons/fa";
 import { BiLinkAlt } from "react-icons/bi";
 import "../App.css";
+import { Link } from "react-router-dom";
+import { toast } from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css";
+
+
 
 function Footer() {
   const [linker, setLinker] = useState(false);
@@ -29,10 +34,19 @@ function Footer() {
             </p>
           </div>
           <div className="footer-icon">
-            <AiFillFacebook className="icons3" />
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+            <AiFillFacebook className="icons3"/>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank" rel="noreferrer">
             <AiFillTwitterSquare className="icons3" />
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
             <AiFillLinkedin className="icons3" />
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
             <FaYoutubeSquare className="icons4" />
+            </a>
+            
           </div>
         </div>
         <div className="linker">
@@ -46,40 +60,136 @@ function Footer() {
           <div className={"quick-links"}>
             <p>Quick Links</p>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Company</li>
-              <li>Our-Services</li>
-              <li>Service</li>
-              <li>Location</li>
-              <li>Recent News</li>
-              <li>Contact us</li>
+              <li>
+                <Link to="/">
+                Home
+                </Link>
+                </li>
+              <li>
+                <Link to="/galleries">
+                About
+                </Link>
+                </li>
+              <li>
+                <Link to='/slider'>
+                Company
+                </Link>
+                </li>
+              <li>
+              <Link to="/pages">
+                Our Services
+                </Link>
+              </li>
+              <li>
+              <Link to="/pages">
+                Service
+                </Link>
+              </li>
+              <li
+              onClick={()=>{
+                toast.success("Currently physically present in India.");
+              }}
+              >Location</li>
+              <li>
+                <Link to="/blogs">
+                Recent News
+                </Link>
+                </li>
+              <li>
+                <Link to="/contact-us">
+                Contact us
+                </Link>
+                </li>
             </ul>
           </div>
           <div className="quick-links">
             <p>Quick Links</p>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Company</li>
-              <li>Our Services</li>
-              <li>Service</li>
-              <li>Location</li>
-              <li>Recent News</li>
-              <li>Contact us</li>
+              <li>
+                <Link to="/">
+                Home
+                </Link>
+                </li>
+              <li>
+                <Link to="/galleries">
+                About
+                </Link>
+                </li>
+              <li>
+                <Link to='/slider'>
+                Company
+                </Link>
+                </li>
+              <li>
+              <Link to="/pages">
+                Our Services
+                </Link>
+              </li>
+              <li>
+              <Link to="/pages">
+                Service
+                </Link>
+              </li>
+              <li
+              onClick={()=>{
+                toast.success("Currently physically present in India.");
+              }}
+              >Location</li>
+              <li>
+                <Link to="/blogs">
+                Recent News
+                </Link>
+                </li>
+              <li>
+                <Link to="/contact-us">
+                Contact us
+                </Link>
+                </li>
             </ul>
           </div>
           <div className="quick-links">
             <p>Quick Links</p>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Company</li>
-              <li>Our Services</li>
-              <li>Service</li>
-              <li>Location</li>
-              <li>Recent News</li>
-              <li>Contact us</li>
+              <li>
+                <Link to="/">
+                Home
+                </Link>
+                </li>
+              <li>
+                <Link to="/galleries">
+                About
+                </Link>
+                </li>
+              <li>
+                <Link to='/slider'>
+                Company
+                </Link>
+                </li>
+              <li>
+              <Link to="/pages">
+                Our Services
+                </Link>
+              </li>
+              <li>
+              <Link to="/pages">
+                Service
+                </Link>
+              </li>
+              <li
+              onClick={()=>{
+                toast.success("Currently physically present in India.");
+              }}
+              >Location</li>
+              <li>
+                <Link to="/blogs">
+                Recent News
+                </Link>
+                </li>
+              <li>
+                <Link to="/contact-us">
+                Contact us
+                </Link>
+                </li>
             </ul>
           </div>
         </div>

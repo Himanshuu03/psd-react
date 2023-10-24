@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
 import "../App.css";
 import { BiSolidLogIn } from "react-icons/bi";
+import { toast } from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css";
 
 function LandingPage() {
   const [state, setState] = useState(false);
@@ -20,10 +22,7 @@ function LandingPage() {
               At Ultra Premiun, we are dedicated to transforming your digital
               vision into reality. As a leading web design and development
               company, we offer a comprehensive range of services that cater to
-              all your online needs. Whether you're a startup looking to
-              establish a web presence or an established business in need of a
-              fresh look, we have the expertise and creativity to deliver
-              outstanding results.
+              all your online needs.
             </p>
           </div>
         </div>
@@ -42,7 +41,11 @@ function LandingPage() {
             className="floater-inp"
             style={{ color: "white" }}
           />
-          <button className="floater-btn">Join</button>
+          <button className="floater-btn"
+          onClick={()=>{
+            toast.error("under maintenance")
+          }}
+          >Join</button>
         </div>
       </div>
       <div
