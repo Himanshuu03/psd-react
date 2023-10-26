@@ -2,7 +2,7 @@ import {HiClock,HiMailOpen} from 'react-icons/hi'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
 import '../App.css';
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { AppContext } from '../contextapi/Context';
 import {FaBars} from 'react-icons/fa'
 import {ImCross} from 'react-icons/im'
@@ -12,9 +12,17 @@ function Navbar({path}) {
   const {loginData} = useContext(AppContext);
   const check = loginData.state;
   const [hamBurger,setHamBurger] = useState(false);
+  const [collab,setCollab]= useState(false);
   function hamHandler(){
     setHamBurger(!hamBurger);
   }
+  useEffect(()=>{
+    if(collab){
+      const collaborationUrl = 'https://top-course-green.vercel.app/';
+      window.open(collaborationUrl, '_blank');
+    }
+  },[collab]);
+
   return (
     <div>
         <div className="main-header">
@@ -67,9 +75,11 @@ function Navbar({path}) {
               </div>
             <div className='links'
             onClick={()=>{
-              toast.warn("Current language is English")
+              setCollab(true);
             }}
-            >LANGUAGES</div>
+            >
+            COLLABORATION
+            </div>
           </div>
         </div>
         <div className="nav"> 
